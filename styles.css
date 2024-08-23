@@ -4,7 +4,7 @@
 
 :root {
   --primary--color: hwb(202 1% 71% / 0.9);
-  --second--color: rgba(242, 247, 250, 0.623);
+  --second--color: rgba(242, 247, 250, 0.801);
   --third--color: rgba(0, 195, 255, 0.87);
   --text--color: rgb(236, 236, 236);
 
@@ -31,6 +31,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 .orbitron-container {
     font-family: var(--primary-font);
     font-optical-sizing: auto;
@@ -38,6 +39,15 @@ body{
     font-style: normal;
     color: var(--text--color);
     max-width: fit-content;
+    padding-bottom:  0.625rem ;
+  }
+
+  .text-container {
+    font-family: var(--second--font);
+    font-optical-sizing: auto;
+    font-size: 1.25rem;;
+    font-style: normal;
+    color: var(--text--color);
     padding-bottom:  0.625rem ;
   }
   .container-body{
@@ -60,6 +70,7 @@ body{
     box-sizing: border-box;
     padding: 1.25rem;
    } 
+
    .container-button{
 
     display: flex;
@@ -137,5 +148,18 @@ body{
         margin: 0.625rem;
       }
 
+
+      .container-footer {
+        display: flex;
+        justify-content: center; /* Para centrar los íconos horizontalmente */
+    }
+    .container-footer ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    .container-footer li {
+        margin-left: 15px; /* Espaciado entre los íconos */
+    }
     
       
