@@ -4,7 +4,7 @@
 
 :root {
   --primary--color: hwb(202 1% 71% / 0.9);
-  --second--color: rgba(108, 141, 161, 0.623);
+  --second--color: rgba(242, 247, 250, 0.623);
   --third--color: rgba(0, 195, 255, 0.87);
   --text--color: rgb(236, 236, 236);
 
@@ -118,9 +118,7 @@ body{
   }
 
     
- 
-
-    .funtionbutton:hover{
+     .funtionbutton:hover{
         background: var(--primary--color);
     }
 

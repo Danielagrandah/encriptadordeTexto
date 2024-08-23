@@ -29,6 +29,31 @@ function textEncrypt() {
   document.getElementById("modifiedtext").textContent = modifiedtext;
 }
 
+function decryptUnkownText() {
+    let userText = document.getElementById("userText").value;
+    let positions = 2;
+    let modifiedtext = '';
+
+    if (!/^[A-Z\s]+$/.test(userText)) {
+        alert("Please enter only capital letters and spaces :-)");
+        return;
+    }
+
+    for (let i = 0; i < userText.length; i++) {
+        let char = userText[i];
+        if (char === ' ') {
+            modifiedtext += ' ';
+        } else {             
+            let codigo = char.charCodeAt(0);
+            let nuevoCodigo = ((codigo - 65 - positions + 26) % 26) + 65;
+            modifiedtext += String.fromCharCode(nuevoCodigo);
+        }
+    }
+
+    // Actualizamos el input con el texto descifrado
+    document.getElementById("modifiedtext").textContent = modifiedtext;
+}
+
 function textDecrypt() {
   let userText = document.getElementById("modifiedtext").textContent;
   let positions = 2;
