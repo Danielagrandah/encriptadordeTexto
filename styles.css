@@ -25,7 +25,7 @@ body{
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* La imagen de fondo permanece fija en la pantalla */
     font-family: var(--second-font);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.5;
     color: var(--second--color);
     justify-content: space-between;
@@ -34,93 +34,91 @@ body{
 .orbitron-container {
     font-family: var(--primary-font);
     font-optical-sizing: auto;
-    font-size: 50px;
+    font-size: 2.25rem;;
     font-style: normal;
     color: var(--text--color);
     max-width: fit-content;
+    padding-bottom:  0.625rem ;
   }
   .container-body{
     display: flex;
     flex-direction: row;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.625rem;
+    padding: 0.625rem;
   }
   .container-left {
     display: flex;
     flex-direction: column;
-    justify-content:first baseline;
+    justify-content: first baseline;
     text-align: center;
-    padding: 50px;
+    padding: 1.25rem;
     background-color: var(--primary--color); /* Fondo oscuro para el contenedor */
-    border: 1px solid var(--text--color); /* Borde ligero */
-    box-shadow: 0 0 10px var(--third--color); /* Sombra para dar profundidad */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 5px;
-    margin-right: 20px;
+    border: 0.063rem solid var(--text--color); /* Borde ligero */
+    box-shadow: 0 0 0.625rem var(--third--color); /* Sombra para dar profundidad */
+    border-radius: 0.625rem; /* Bordes redondeados */
+    margin: 3.125rem 1.25rem 0.313rem 3.125rem ;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1.25rem;
    } 
+   .container-button{
 
-   input{
-    background-color: transparent;
-    font-family: var(--second-font);
-    font-size: 20px;
-    width: 100%;
-    height: 60%;
-    border: 1px solid #dddddd00; /* Borde ligero */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 15px;
-    color: var(--text--color);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 1.25rem;
+      
+      
   }
 
-    .container-right {
+   
+   .funtionbutton{
+    display: flex;
+    width: 18.75rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    font-size: 1.563rem;
+    font-weight: 300;
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;    
+    font-family: var(--primary-font);
+    border: 0.125rem solid var(--third--color);
+    margin: 0.625rem;
+    color: var(--text--color);
+    background-color: transparent;
+    
+        
+}
+   .container-right {
     display: flex;
     flex-direction: column;
     justify-content: end;
     text-align: center;
     background-color: var(--primary--color); /* Fondo blanco para el contenedor */
-    border: 1px solid var(--text--color); /* Borde ligero */
-    box-shadow: 0 0 10px var(--third--color); /* Sombra para dar profundidad */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 5px;
-    margin-right: 200px;
-    margin-right: 100px;
+    border: 0.063rem solid var(--text--color); /* Borde ligero */
+    box-shadow: 0 0 0.625rem var(--third--color); /* Sombra para dar profundidad */
+    border-radius: 0.625rem; /* Bordes redondeados */
+    margin: 3.125rem 12.5rem 0.313rem 1.25rem;  /* To right botton and left */
     box-sizing: border-box;
-    padding: 20px;
+    padding: 3.125rem;
 
     }
-    .container-button{
 
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-        
-        
-    }
+   input{
+    background-color: transparent;
+    font-family: var(--second-font);
+    font-size: 1.25rem;
+    width: 100%;
+    height: 60%;
+    border: 0.063rem solid #dddddd00; /* Borde ligero */
+    border-radius: 0.625rem; /* Bordes redondeados */
+    padding: 1rem;
+    color: var(--text--color);
+  }
 
-    .funtionbutton{
-        display: flex;
-        width: 300px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
-        font-size: 24px;
-        font-weight: 300;
-        padding: 20px 20px;
-        text-decoration: none;    
-        font-family: var(--primary-font);
-        border: 2px solid var(--third--color);
-        margin: 10px;
-        color: var(--text--color);
-        background-color: transparent;
-        
-            
-    }
+    
+ 
 
     .funtionbutton:hover{
         background: var(--primary--color);
@@ -138,7 +136,7 @@ body{
         display: flex;
         flex-direction: center; /* Hace que la imagen y los botones se apilen verticalmente */
         align-items: center; /* Centra la imagen y los botones horizontalmente */
-        margin: 10px;
+        margin: 0.625rem;
       }
 
     

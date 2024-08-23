@@ -15,7 +15,7 @@ function textEncrypt() {
   let modifiedtext = '';
 
   if (!/^[A-Z\s]+$/.test(userText)) {
-      alert("Please enter only capital letters and spaces :-)");
+      alert("Please enter only letters and spaces :-)");
       return;
   }
 
